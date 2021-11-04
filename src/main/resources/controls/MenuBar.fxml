@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="world.ucode.controls.MenuControl">
+   <children>
+      <ImageView fx:id="back" fitHeight="406.0" fitWidth="713.0" opacity="0.74" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/back2.GIF" />
+         </image>
+      </ImageView>
+      <Button fx:id="newGameBut" layoutX="338.0" layoutY="33.0" mnemonicParsing="false" onAction="#newGame" prefHeight="66.0" prefWidth="198.0" style="-fx-background-color: lightpink;" text="NEW GAME" />
+      <Button fx:id="loadGameBut" layoutX="338.0" layoutY="116.0" mnemonicParsing="false" onAction="#loadGame" prefHeight="66.0" prefWidth="198.0" style="-fx-background-color: lightpink;" text="CONTINUE">
+         <font>
+            <Font name="Chalkboard" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="optionBut" layoutX="338.0" layoutY="200.0" mnemonicParsing="false" onAction="#options" prefHeight="66.0" prefWidth="198.0" style="-fx-background-color: lightpink;" text="SETTING">
+         <font>
+            <Font name="Chalkboard" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="quit" layoutX="338.0" layoutY="285.0" mnemonicParsing="false" onAction="#exit" prefHeight="66.0" prefWidth="198.0" style="-fx-background-color: lightpink;" text="EXIT">
+         <font>
+            <Font name="Chalkboard" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="284.0" fitWidth="215.0" layoutX="53.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

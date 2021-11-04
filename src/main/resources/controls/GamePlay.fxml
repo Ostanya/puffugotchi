@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?imposr world.ucode.controls.GameControl?>
+
+<Pane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="world.ucode.controls.GameControl">
+   <children>
+      <ImageView fx:id="backgrnd" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/back1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="hero" fitHeight="224.0" fitWidth="183.0" layoutX="310.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/red.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="coin" layoutX="476.0" layoutY="23.0" prefHeight="24.0" prefWidth="34.0">
+         <font>
+            <Font name="Chalkboard" size="15.0" />
+         </font></Label>
+      <Label fx:id="purity" layoutX="44.0" layoutY="22.0" prefHeight="25.0" prefWidth="34.0">
+         <font>
+            <Font name="Chalkboard" size="13.0" />
+         </font></Label>
+      <Label fx:id="helsi" layoutX="165.0" layoutY="24.0" prefHeight="24.0" prefWidth="34.0">
+         <font>
+            <Font name="Chalkboard" size="14.0" />
+         </font></Label>
+      <Label fx:id="thirst" layoutX="552.0" layoutY="23.0" prefHeight="24.0" prefWidth="34.0">
+         <font>
+            <Font name="Chalkboard" size="14.0" />
+         </font></Label>
+      <Label fx:id="satiety" layoutX="249.0" layoutY="23.0" prefHeight="24.0" prefWidth="16.0" text=" :">
+         <font>
+            <Font name="Chalkboard" size="14.0" />
+         </font></Label>
+      <Label fx:id="joy" layoutX="97.0" layoutY="27.0" prefHeight="17.0" prefWidth="34.0">
+         <font>
+            <Font name="Chalkboard" size="14.0" />
+         </font></Label>
+      <Label fx:id="imunity" layoutX="350.0" layoutY="25.0" prefHeight="24.0" prefWidth="34.0" />
+      <Label fx:id="name_pet" layoutX="475.0" layoutY="66.0" prefHeight="27.0" prefWidth="50.0" />
+      <ImageView fitHeight="87.0" fitWidth="110.0" layoutX="17.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/food.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="87.0" fitWidth="90.0" layoutX="16.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/soap.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="87.0" fitWidth="87.0" layoutX="204.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/pill.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="96.0" fitWidth="90.0" layoutX="108.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/game.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="87.0" fitWidth="90.0" layoutX="108.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/botttle.gif" />
+         </image>
+      </ImageView>
+      <Button fx:id="pill" layoutX="204.0" layoutY="69.0" mnemonicParsing="false" onAction="#pill" prefHeight="87.0" prefWidth="87.0" style="-fx-background-color: transparent;" />
+      <Button fx:id="water" layoutX="104.0" layoutY="69.0" mnemonicParsing="false" onAction="#water" prefHeight="87.0" prefWidth="97.0" style="-fx-background-color: transparent;" />
+      <Button fx:id="soap" layoutX="17.0" layoutY="163.0" mnemonicParsing="false" onAction="#soap" prefWidth="97.0" style="-fx-background-color: transparent;" />
+      <Button fx:id="eat" layoutX="20.0" layoutY="76.0" mnemonicParsing="false" onAction="#eat" prefHeight="73.0" prefWidth="82.0" style="-fx-background-color: transparent;" />
+      <Button fx:id="play" layoutX="120.0" layoutY="178.0" mnemonicParsing="false" onAction="#play" prefHeight="45.0" prefWidth="90.0" style="-fx-background-color: transparent;" />
+      <Button fx:id="back" layoutX="54.0" layoutY="316.0" mnemonicParsing="false" onAction="#back" prefHeight="49.0" prefWidth="82.0" style="-fx-background-color: lightpink;" text="BACK">
+         <font>
+            <Font name="Chalkboard" size="16.0" />
+         </font></Button>
+      <Text layoutX="4.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Purity:" />
+      <Text layoutX="134.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Health:" />
+      <Text layoutX="300.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Immunity" />
+      <Text layoutX="402.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My name is " />
+      <Text layoutX="67.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Joy:" />
+      <Text layoutX="210.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Satiety:" />
+      <Text layoutX="515.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thrist :" />
+      <Text layoutX="434.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coin :" wrappingWidth="40.5234375" />
+<!--      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />-->
+<!--      <ImageView fitHeight="260.0" fitWidth="190.0" layoutX="322.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">-->
+<!--         <image>-->
+<!--            <Image url="@../img/red.png" />-->
+<!--         </image>-->
+<!--      </ImageView>-->
+   </children>
+</Pane>

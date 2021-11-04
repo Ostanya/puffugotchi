@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+@font-face {
+    font-family: "Press Start 2P";
+}
+
+.choice-box .label {
+    -fx-text-fill: d722e8; 
+}
+
+.choice-box .context-menu {
+    -fx-background-color: transparent ;
+}
